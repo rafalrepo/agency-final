@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav class='cf'>
-            <a href='#' id='logo-start'><img src="img/Logo.png" alt=""></a>
+            <a href='#' id='logo-start'><b>Interactive</b>Agency</a>
             <ul class='cf'>
                 <li class="hide-of-small">
                     <a href='#contact' class="active">Contact</a>
@@ -49,10 +49,93 @@
         </div>
     </header>
 
+    <section class="bestSection">
+        <div class="best-design-section">
+            <div class="content">
+                <h1><span>Best</span>Design</h1>
+                <p>Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
+                    auctor
+                    mauris, placerat fermentum lectus vulputate sed. Phasellus vestibulum sit amet dolor eget eleifend.
+                </p>
+                <a href="" class="btn home-btn">Ask for price</a>
+            </div>
+        </div>
+        <div class="best-code-section">
+            <div class="content">
+                <h1><span>Best</span>Code</h1>
+                <p>Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
+                    auctor
+                    mauris, placerat fermentum lectus vulputate sed. Phasellus vestibulum sit amet dolor eget eleifend.
+                </p>
+                <a href="" class="btn home-btn">Ask for price</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="whatWeDo">
+        <div>
+            <h1>What we do?</h1>
+        </div>
+        <div class="showcase">
+            <div class="halfShowcase">
+                <div class="left">
+                    <img src="img/whatwedo1.png" alt="">
+                </div>
+                <div class="right">
+                    <h3>Web design</h3>
+                    <p>Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
+                        auctor mauris, placerat fermentum.</p>
+                </div>
+            </div>
+            <div class="halfShowcase">
+                <div class="left"><img src="img/whatwedo2.png" alt=""></div>
+                <div class="right">
+                    <h3>Web Applications</h3>
+                    <p>Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
+                        auctor mauris, placerat fermentum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="showcase">
+            <div class="halfShowcase">
+                <div class="left">
+                    <img src="img/whatwedo3.png" alt="">
+                </div>
+                <div class="right">
+                    <h3>Digital paiting</h3>
+                    <p>Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
+                        auctor mauris, placerat fermentum.</p>
+                </div>
+            </div>
+            <div class="halfShowcase">
+                <div class="left"><img src="img/whatwedo4.png" alt=""></div>
+                <div class="right">
+                    <h3>Desktop Applications</h3>
+                    <p>Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
+                        auctor mauris, placerat fermentum.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="" class="btn home-btn">Ask for price</a>
+        </div>
+    </section>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="nav.js"></script>
+    <script>
+        $(window).scroll(function () {
+            var top = $(window).scrollTop();
+            if (top >= 60) {
+                $("nav").addClass('fixed-nav');
+            } else if ($("nav").hasClass('fixed-nav')) {
+                $("nav").removeClass('fixed-nav');
+            }
+        })
+    </script>
+
 </body>
 
 </html>
