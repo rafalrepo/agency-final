@@ -121,6 +121,74 @@
         </div>
     </section>
 
+    <section id="portfolio">
+        <div class="content">
+            <div class="img-p">
+                <img src="img/portfolio1.png" alt="">
+                <div class="hoverImg">
+                    <h3>Neptune template</h3>
+                    <p>Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
+                        auctor mauris, placerat fermentum.</p>
+                    <a href="" class="btn home-btn">Watch more</a>
+                </div>
+            </div>
+            <div class="img-p"><img src="img/portfolio2.png" alt="">
+                <div class="hoverImg">
+                    <h3>Neptune template</h3>
+                    <p>Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
+                        auctor mauris, placerat fermentum.</p>
+                    <a href="" class="btn home-btn">Watch more</a>
+                </div>
+            </div>
+            <div class="img-p"><img src="img/portfolio3.png" alt="">
+                <div class="hoverImg">
+                    <h3>Neptune template</h3>
+                    <p>Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
+                        auctor mauris, placerat fermentum.</p>
+                    <a href="" class="btn home-btn">Watch more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutUs">
+        <div class="container">
+            <div class="head-content">
+                <h1>About us!</h1>
+                <p>Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
+                    auctor mauris, placerat fermentum.</p>
+            </div>
+            <div class="body-content">
+                <div class="card">
+                    <img src="img/aboutUs1.png" alt="">
+                    <h3>John Doe</h3>
+                    <p>Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+                </div>
+                <div class="card">
+                    <img src="img/aboutUs2.png" alt="">
+                    <h3>John Doe</h3>
+                    <p>Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+                </div>
+                <div class="card">
+                    <img src="img/AboutUs3.png" alt="">
+                    <h3>John Doe</h3>
+                    <p>Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+                </div>
+                <div class="card">
+                    <img src="img/AboutUs4.png" alt="">
+                    <h3>John Doe</h3>
+                    <p>Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+                </div>
+            </div>
+            <a href="" class="btn home-btn">Watch more</a>
+        </div>
+    </section>
+
+    <section id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2987767.7150393142!2d-74.5294928691078!3d43.054878778008074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1snow+york!5e0!3m2!1spl!2spl!4v1544645536335"
+            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
@@ -130,8 +198,12 @@
             var top = $(window).scrollTop();
             if (top >= 60) {
                 $("nav").addClass('fixed-nav');
+                $("nav a").addClass('fixed-navA');
+                $("nav li").addClass('fixed-li');
             } else if ($("nav").hasClass('fixed-nav')) {
                 $("nav").removeClass('fixed-nav');
+                $("nav a").removeClass('fixed-navA');
+                $("nav li").removeClass('fixed-li');
             }
         })
     </script>

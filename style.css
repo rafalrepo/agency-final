@@ -92,9 +92,10 @@ header {
     color: var(--light-color);
 }
 
-#homeSection .content .home-btn, 
+#homeSection .content .home-btn,
 .bestSection .content .home-btn,
-#whatWeDo .home-btn{
+#whatWeDo .home-btn,
+#aboutUs .home-btn {
     margin-top: 60px;
     color: var(--white-color);
     text-decoration: none;
@@ -121,45 +122,45 @@ header {
     background-repeat: no-repeat;
 }
 
-.bestSection .content{
+.bestSection .content {
     margin-left: 20%;
     margin-top: 20%;
     padding: 1rem;
     color: white;
 }
 
-.bestSection .content p{
+.bestSection .content p {
     color: white !important;
 }
 
-.bestSection .content h1 span{
+.bestSection .content h1 span {
     font-weight: 100 !important;
 }
 
-#whatWeDo{
+#whatWeDo {
     padding: 5rem 0;
     text-align: center;
     display: grid;
     grid-gap: 20px;
 }
 
-#whatWeDo h1{
+#whatWeDo h1 {
     font-size: 3rem;
     padding-bottom: 2rem;
 }
 
-#whatWeDo .showcase{
+#whatWeDo .showcase {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
 }
 
-#whatWeDo .showcase .halfShowcase{
+#whatWeDo .showcase .halfShowcase {
     display: flex;
     max-width: 500px;
 }
 
-#whatWeDo .showcase .halfShowcase *{
+#whatWeDo .showcase .halfShowcase * {
     padding: 0.5rem;
 }
 
@@ -167,7 +168,7 @@ header {
     width: 30%;
 }
 
-#whatWeDo .showcase .halfShowcase .left img{
+#whatWeDo .showcase .halfShowcase .left img {
     display: block;
     max-width: 100%;
 }
@@ -177,16 +178,130 @@ header {
     text-align: left;
 }
 
-#whatWeDo .showcase .halfShowcase .right h3{
+#whatWeDo .showcase .halfShowcase .right h3 {
     font-size: 1.6rem;
     padding-bottom: 0.5rem;
 }
 
-#whatWeDo .showcase .halfShowcase .right p{
+#whatWeDo .showcase .halfShowcase .right p {
     line-height: 30px;
     font-size: 0.9rem;
     color: var(--light-color);
 }
+
+#portfolio{
+    width: 100%;
+    height: 350px;
+}
+
+#portfolio .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#portfolio .content .img-p {
+    position: relative;
+}
+
+#portfolio .content .img-p img {
+    max-width: 100%;
+    height: auto;
+}
+
+#portfolio .content .img-p .hoverImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    color: var(--white-color);  
+    transition: all 0.3s ease-in-out; 
+}
+
+#portfolio .content .img-p .hoverImg h3 {
+    font-size: 1.4rem;
+    padding: 1rem;
+    padding-bottom: 0
+}
+
+#portfolio .content .img-p .hoverImg p {
+    font-size: 0.9rem;
+    padding: 2rem;
+    line-height: 30px;
+}
+
+#portfolio .content .img-p .hoverImg a {
+    width: 25%;
+    margin: 0 auto;
+}
+
+#portfolio .content .img-p:hover .hoverImg{
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+
+#aboutUs{
+    background-image: url("img/bg-AboutUs.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;   
+    text-align: center;
+}
+
+#aboutUs .head-content{
+    padding: 3rem;
+    color: var(--white-color);
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 30px
+}
+
+#aboutUs .head-content h1{
+    font-size: 3rem;
+    padding: 2rem;
+    color: var(--white-color)
+}
+
+#aboutUs .head-content p{
+    color: var(--light-color)
+}
+
+#aboutUs .body-content{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+#aboutUs .body-content .card img{
+    display: block;
+    margin: auto;
+    padding: 1rem;
+}
+
+#aboutUs .body-content .card h3{
+    font-size: 1.6rem;
+    padding: 1rem;
+    color: var(--white-color)
+}
+
+#aboutUs .body-content .card p{
+    line-height: 30px;
+    color: var(--light-color)
+}
+
+#aboutUs .home-btn{
+    margin-top: 30px;
+}
+
 /* scroll icon */
 
 .icon-scroll-content {
@@ -321,12 +436,23 @@ nav a#logo-start {
 
 
 .fixed-nav {
-    background: rgba(0, 0, 0, 0.3) !important;
+    background: rgba(0, 0, 0, 0.8) !important;
     padding: 1.5em 0 !important;
     margin: 0;
+    z-index: 100;
 }
 
-.fixed-a{
+.fixed-navA {
+    color: var(--white-color) !important;
+    opacity: 0.9
+}
+
+.fixed-li:hover{
+    border-radius: 18px;
+    background: var(--light-color);
+}
+
+.fixed-a {
     color: var(--white-color) !important;
 }
 
@@ -402,11 +528,12 @@ nav a#logo-start {
         top: 0;
     }
 
-    .bestSection, #whatWeDo .showcase{
+    .bestSection,
+    #whatWeDo .showcase {
         grid-template-columns: 1fr;
     }
 
-    .bestSection .content{
+    .bestSection .content {
         margin-left: 20%;
         margin-top: 10%;
         padding: 0.8rem;
@@ -415,7 +542,7 @@ nav a#logo-start {
     }
 
     #whatWeDo .showcase .halfShowcase .left {
-        padding-top: 3%    
+        padding-top: 3%
     }
 
 }
@@ -432,7 +559,7 @@ nav a#logo-start {
     }
 
     #whatWeDo .showcase .halfShowcase .left {
-        padding-top: 10%    
+        padding-top: 10%
     }
 
 }
